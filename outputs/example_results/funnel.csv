@@ -1,0 +1,7 @@
+stage,count,rejection_reason
+candidates,54,
+valid,51,3 rejected by schema/static checks
+deduped,50,1 exact duplicates removed
+gates_passed,13,37 failed risk gates
+correlation_passed,6,7 correlated candidates removed
+selected,3,3 left outside top-k or family caps

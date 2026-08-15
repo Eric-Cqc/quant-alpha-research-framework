@@ -1,0 +1,41 @@
+[general]
+seed = 20260815
+n_tickers = 100
+n_days = 750
+start = "2020-01-02"
+
+[backtest]
+quantile = 0.20
+cost_bps = 5.0
+max_abs_weight = 0.05
+
+[selection]
+correlation_threshold = 0.80
+top_k = 6
+
+[selection.family_caps]
+momentum_12_1 = 2
+short_term_reversal = 2
+vol_scaled_mean_reversion = 2
+volume_price_trend = 2
+trend_quality = 2
+
+[gates]
+min_sharpe = 0.35
+max_turnover = 1.50
+max_drawdown = 0.65
+max_abs_weight = 0.051
+min_active_observations = 200
+
+[walk_forward]
+train_days = 360
+validation_days = 120
+test_days = 120
+step_days = 120
+
+[fitness]
+sharpe = 1.0
+return = 0.15
+turnover = 0.10
+drawdown = 0.20
+turnover_floor = 0.001

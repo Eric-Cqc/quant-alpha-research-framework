@@ -1,4 +1,6 @@
 # Signal Research Framework
+This repo is a research framework. Not a product install path — see profile Selected for current work.
+
 
 ## What this is
 
